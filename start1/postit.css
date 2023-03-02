@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: #666666;
+    height: 100vh;
+    font-family: 'Indie Flower', cursive;
+}
+.task {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.group {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.postIt {
+    margin:2rem;
+    padding:4rem;
+    height: 200px;
+    box-shadow: 8px 6px 17px rgb(51 36 53 / 70%);
+} 
+
+.group:nth-child(1) > .postIt:nth-child(1){
+    background-color: rgb(150, 101, 151);
+    transform: rotate(-6deg);
+   
+}
+.group:nth-child(1) > .postIt:nth-child(2){
+    background-color: rgb(65, 40, 62);
+    transform: rotate(2deg);
+
+}
+.group:nth-child(1) > .postIt:nth-child(3){
+    background-color: rgb(219, 125, 140) ;
+    transform: rotate(-4deg);
+}
+.group:nth-child(1) > .postIt:nth-child(4){
+    background-color: rgb(127, 96, 205);
+    transform: rotate(4deg);
+}
+.group:nth-child(2) > .postIt:nth-child(1){
+    background-color: rgb(127, 96, 205) ;
+    transform: rotate(-2deg);
+}
+.group:nth-child(2) > .postIt:nth-child(2){
+    background-color: rgb(150, 101, 151);
+    transform: rotate(1deg);
+}
+.group:nth-child(2) > .postIt:nth-child(3){
+    background-color: rgb(65, 40, 62);
+    transform: rotate(-5deg);
+
+}
+.group:nth-child(2) > .postIt:nth-child(4){
+    background-color: rgb(219, 125, 140);
+    transform: rotate(6deg);
+}
+
+.group:nth-child(1) > .postIt:hover {
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+    transition: transform .15s linear;
+}
+.group:nth-child(2) > .postIt:hover {
+    box-shadow:10px 10px 7px rgba(0,0,0,.7);
+    transform: scale(1.25);
+    position:relative;
+    z-index:5;
+    transition: transform .15s linear;
+}
+
